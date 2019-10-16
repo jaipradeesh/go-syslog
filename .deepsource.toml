@@ -1,0 +1,14 @@
+version = 1
+
+test_patterns = [
+  "testing/**",
+  "**/*_test.go"
+]
+
+[[analyzers]]
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_path = "github.com/influxdata/go-syslog"
+
